@@ -1,0 +1,206 @@
+{
+ "set": "gelistirme",
+ "n": 6000,
+ "tum_alanlar_dogru": "5972/6000 %99.5",
+ "alan": {
+  "il": "6000/6000 %100.0",
+  "ilce": "6000/6000 %100.0",
+  "mahalle": "5981/6000 %99.7",
+  "yol": "5981/6000 %99.7",
+  "yol_turu": "5999/6000 %100.0",
+  "no": "6000/6000 %100.0",
+  "kat": "1245/1245 %100.0",
+  "ic_kapi": "1245/1245 %100.0",
+  "posta_kodu": "755/755 %100.0"
+ },
+ "bicim_tam": {
+  "kanonik": "994/1000 %99.4",
+  "buyuk_ascii": "996/1000 %99.6",
+  "il_basta": "996/1000 %99.6",
+  "virgullu": "995/1000 %99.5",
+  "daireli": "1240/1245 %99.6",
+  "postali": "751/755 %99.5"
+ },
+ "ornek_hatalar": [
+  {
+   "alan": "yol",
+   "metin": "Abdurrahmangazi mah Kale Caddesi, Enbiya Sok. No:24 Kat:8 D:16 Sultanbeyli/İstanbul",
+   "bulunan": "Enbiya",
+   "altin": "Kale Caddesi, Enbiya"
+  },
+  {
+   "alan": "yol",
+   "metin": "Bursa Nilüfer Üçevler mah Öğretmen Caddesi/ Ülgen sk No: 1",
+   "bulunan": "Ülgen",
+   "altin": "Öğretmen Caddesi/ Ülgen"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Turgut Reis Mahallesi, Bağlık Caddesi Mh. Malazgirt cd no 27 Kat:11 D:12 Sultanbeyli/İstanbul",
+   "bulunan": "Turgut Reis",
+   "altin": "Turgut Reis Mahallesi, Bağlık Caddesi"
+  },
+  {
+   "alan": "yol",
+   "metin": "Turgut Reis Mahallesi, Bağlık Caddesi Mh. Malazgirt cd no 27 Kat:11 D:12 Sultanbeyli/İstanbul",
+   "bulunan": "Bağlık",
+   "altin": "Malazgirt"
+  },
+  {
+   "alan": "yol",
+   "metin": "Atakent Mah. 451/A. Sokak no 5 İdil/Şırnak",
+   "bulunan": "451/A",
+   "altin": "451/A."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Antalya Alanya Konaklı Mahallesi No: Mh. Mustafa Kemal Bulvarı no 33",
+   "bulunan": "Konaklı",
+   "altin": "Konaklı Mahallesi No:"
+  },
+  {
+   "alan": "yol",
+   "metin": "Antalya Alanya Konaklı Mahallesi No: Mh. Mustafa Kemal Bulvarı no 33",
+   "bulunan": "Mh. Mustafa Kemal",
+   "altin": "Mustafa Kemal"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Antalya Kemer Cumhuriyet Mahallesi, Göynük Mahallesi 131. Sk. No: 4",
+   "bulunan": "Cumhuriyet",
+   "altin": "Cumhuriyet Mahallesi, Göynük"
+  },
+  {
+   "alan": "yol",
+   "metin": "Antalya Kemer Cumhuriyet Mahallesi, Göynük Mahallesi 131. Sk. No: 4",
+   "bulunan": "Göynük Mahallesi 131.",
+   "altin": "131."
+  },
+  {
+   "alan": "yol",
+   "metin": "Sarıgazi Mahallesi, Şemistan Şit Sokak, No: 25, Sancaktepe, İstanbul",
+   "bulunan": null,
+   "altin": "Şemistan Şit"
+  },
+  {
+   "alan": "yol_turu",
+   "metin": "Sarıgazi Mahallesi, Şemistan Şit Sokak, No: 25, Sancaktepe, İstanbul",
+   "bulunan": null,
+   "altin": "sokak"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Bulgurlu, Piri Reis Sokak Mahallesi Piri Reis Sok. No: 2, 34696 Üsküdar/İstanbul",
+   "bulunan": "Piri Reis Sokak",
+   "altin": "Bulgurlu, Piri Reis Sokak"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Hasanpaşa Mahallesi, Petrol Yolu Caddesi MAH. Petrol Yolu Cd. no 54 Kat:4 D:10 Sultanbeyli/İstanbul",
+   "bulunan": "Hasanpaşa",
+   "altin": "Hasanpaşa Mahallesi, Petrol Yolu Caddesi"
+  },
+  {
+   "alan": "yol",
+   "metin": "Atakent MAH., 454/A. Sokak, No.6, İdil, Şırnak",
+   "bulunan": "454/A",
+   "altin": "454/A."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Karacaören Mahallesi Defne Sokak Ali Kırca Apt. Mahallesi Karacaören Defne Sok. no 5, 06145 Altındağ/Ankara",
+   "bulunan": "Karacaören",
+   "altin": "Karacaören Mahallesi Defne Sokak Ali Kırca Apt."
+  },
+  {
+   "alan": "yol",
+   "metin": "Karacaören Mahallesi Defne Sokak Ali Kırca Apt. Mahallesi Karacaören Defne Sok. no 5, 06145 Altındağ/Ankara",
+   "bulunan": "Defne",
+   "altin": "Karacaören Defne"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Topçular Mah. Örcün Yolu Cad. Kalıcı Konut İş Merkezi F2 Blok No. 119 Gölcük/Kocaeli MAH. Örcün Yolu Cd. no 119, 41950 Gölcük/Kocaeli",
+   "bulunan": "Topçular",
+   "altin": "Topçular Mah. Örcün Yolu Cad. Kalıcı Konut İş Merkezi F2 Blok No. 119 Gölcük/Kocaeli"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "bayraklıdede mah. Selçuk bulvarı no Mahallesi Turgut Özal Bulv. No.12/1 Kuşadası/Aydın",
+   "bulunan": "bayraklıdede",
+   "altin": "bayraklıdede mah. Selçuk bulvarı no"
+  },
+  {
+   "alan": "yol",
+   "metin": "bayraklıdede mah. Selçuk bulvarı no Mahallesi Turgut Özal Bulv. No.12/1 Kuşadası/Aydın",
+   "bulunan": "Selçuk",
+   "altin": "Turgut Özal"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Bağlar Cad. Mah. Osman Paşa Caddesi no 97 Kat:8 D:5 Bağcılar/İstanbul",
+   "bulunan": "Bağlar Cad",
+   "altin": "Bağlar Cad."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Yayla, 1488. Cd 4A Mh., Yozgat Bulv., No: 1488, Keçiören, Ankara",
+   "bulunan": "1488. Cd 4A",
+   "altin": "Yayla, 1488. Cd 4A"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "SARIMAZI SB. MAH. 2. BULVAR 5. CD. NO.5/01 CEYHAN ADANA",
+   "bulunan": "SARIMAZI SB",
+   "altin": "Sarımazı SB."
+  },
+  {
+   "alan": "yol",
+   "metin": "Suadiye Mh., Bağdat Caddesi, Fıstıklı Sk., No.3, Kadıköy, İstanbul",
+   "bulunan": "Fıstıklı",
+   "altin": "Bağdat Caddesi, Fıstıklı"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "SARAY MAHALLESI, AHMET TEVFIK ILERI NO:18 MAHALLESI AHMET TEVFIK ILERI CADDESI NO 18 UMRANIYE ISTANBUL",
+   "bulunan": "SARAY",
+   "altin": "Saray Mahallesi, Ahmet Tevfik İleri No:18"
+  },
+  {
+   "alan": "yol",
+   "metin": "SARAY MAHALLESI, AHMET TEVFIK ILERI NO:18 MAHALLESI AHMET TEVFIK ILERI CADDESI NO 18 UMRANIYE ISTANBUL",
+   "bulunan": "MAHALLESI AHMET TEVFIK ILERI",
+   "altin": "Ahmet Tevfik İleri"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi MAH. 101. cd No.2 Selçuklu/Konya",
+   "bulunan": "Büyükkayacık",
+   "altin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi"
+  },
+  {
+   "alan": "yol",
+   "metin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi MAH. 101. cd No.2 Selçuklu/Konya",
+   "bulunan": "4.Organize Sanayi Bölgesi MAH. 101.",
+   "altin": "101."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Meriç Mahallesi, MTK Sitesi MAH. 5747/3. sk No:3 Bornova/İzmir",
+   "bulunan": "Meriç",
+   "altin": "Meriç Mahallesi, MTK Sitesi"
+  },
+  {
+   "alan": "yol",
+   "metin": "Meriç Mahallesi, MTK Sitesi MAH. 5747/3. sk No:3 Bornova/İzmir",
+   "bulunan": "MAH. 5747/3.",
+   "altin": "5747/3."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Kandilli İskele Cd. No:3, Kandilli Mh. Kandilli İskele Cad. No:3 Kat:12 D:18 Üsküdar/İstanbul",
+   "bulunan": "Kandilli",
+   "altin": "Kandilli İskele Cd. No:3, Kandilli"
+  }
+ ]
+}

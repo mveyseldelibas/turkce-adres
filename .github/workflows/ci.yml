@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      - name: Held-out evaluation must stay at or above 99%
+        run: |
+          python bench/degerlendir.py sinama > sonuc.txt
+          head -5 sonuc.txt
+          python -c "import re,sys; t=open('sonuc.txt',encoding='utf-8').read(); p=float(re.search(r'tum_alanlar_dogru\": \"\d+/\d+ %([\d.]+)', t).group(1)); sys.exit(0 if p >= 99.0 else 1)"
