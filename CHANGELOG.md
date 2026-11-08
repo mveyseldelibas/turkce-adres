@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 (unreleased)
+## 0.1.0 (2026-11-09)
 
 - First release: rule-based parser (`ayristir` / `parse`), formatter (`bicimle` / `format_address`), command line tool with CSV support.
 - Turkish and English field names and CLI messages (`dil="en"`, `--lang en`).
