@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Turkish address parser: split messy Turkish addresses into province, district, neighbourhood, street and number. Offline, no dependencies."
 readme = "README.md"
 license = { text = "MIT AND ODbL-1.0" }
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Mehmet Veysel Delibaş" }]
 keywords = ["turkish", "turkey", "address", "address-parser", "adres", "geocoding", "gis", "nlp", "normalization", "openstreetmap"]
 classifiers = [
@@ -19,7 +19,6 @@ classifiers = [
   "Natural Language :: English",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
