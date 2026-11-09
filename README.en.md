@@ -1,89 +1,76 @@
-# tr-adres
+# turkce-adres
 
 [Türkçe](README.md)
 
-A parser for Turkish addresses. It splits free-text addresses into province, district, neighbourhood, street, house number, floor, unit, building and postcode, and formats them into a standard spelling.
+An offline, dependency-free Python library and command line tool for Turkish addresses:
 
-- **Offline.** No network, no model, no dependencies; addresses never leave your machine.
-- **Knows Turkish spelling variants:** `Mah. / Mh. / Mahallesi`, `Sk. / Sok. / Sokak`, `Cad. / Cd.`, `Bulv. / Blv.`, `No: / No. / no`, `Kat:`, `D: / Daire`, all-caps ASCII (`KADIKOY ISTANBUL`), province first or last.
-- **Province and district always come back correctly spelled** (`KADIKOY` -> `Kadıköy`; 81 provinces, 973 districts). The province is inferred from the district or the postcode.
-- **Field names in English or Turkish.**
+- **Parse** free-text addresses into province, district, neighbourhood/village, street (street, avenue, boulevard, dead end, square), house number, block, floor, unit, building, postcode, and landmark phrases such as "Migros karşısı" (opposite Migros).
+- **Fix** all-caps ASCII spelling (`CAFERAGA` → `Caferağa`, `BUYUKDERE` → `Büyükdere`) and typos in province and district names (`Istnbul` → `İstanbul`); format to a standard (cargo) or official style.
+- **Validate** the neighbourhood against a list of 66,687 neighbourhoods, villages and quarters; infer a missing district or province from the neighbourhood or postcode.
+- **Geocode offline:** approximate coordinates at street, neighbourhood, district or province level. No request leaves your machine.
+- **Match** two addresses ("same place?") and group duplicates in a CSV file.
+- **Generalise for privacy (KVKK/GDPR):** drop house number, unit and postcode and keep only neighbourhood, district or province before sharing data.
+- **Delivery check:** list what is missing or inconsistent (no house number, district not in this province...).
+- **Two languages:** field names, notes and CLI messages in English or Turkish.
 
 ```bash
-pip install tr-adres
+pip install turkce-adres
 ```
 
 ## Usage
 
 ```python
-from tr_adres import parse, format_address
+from turkce_adres import parse, format_address, geocode, similarity, generalise, missing
 
-a = parse("CAFERAGA MH MODA CD NO 12 DAIRE 3 KADIKOY ISTANBUL")
-# {'province': 'İstanbul', 'district': 'Kadıköy', 'neighbourhood': 'CAFERAGA', 'street': 'MODA',
-#  'street_type': 'avenue', 'parent_street': None, 'number': '12', 'unit': '3', 'floor': None,
-#  'building': None, 'postcode': None, 'unparsed': None}
+a = parse("ISTANBUL BESIKTAS LEVENT MAH. BUYUKDERE CAD NO 185 D 4")
+a["province"], a["district"], a["neighbourhood"], a["street"], a["number"], a["unit"]
+# ('İstanbul', 'Beşiktaş', 'Levent', 'Büyükdere', '185', '4')
 
-format_address(a)
-# 'Caferaga Mah. Moda Cad. No:12 D:3, Kadıköy/İstanbul'
+format_address(a)            # 'Levent Mah. Büyükdere Cad. No:185 D:4, Beşiktaş/İstanbul'
+geocode(a, "en")             # {'lat': ..., 'lon': ..., 'level': 'street', 'source': 'OpenStreetMap (ODbL)'}
+similarity("CAFERAGA MH MODA CD NO 12 KADIKOY ISTANBUL",
+           "Caferağa Mahallesi, Moda Caddesi No:12, Kadıköy/İstanbul")       # 1.0
+generalise("Caferağa Mah. Moda Cad. No:12 D:3 Kadıköy/İstanbul 34710", dil="en")["text"]
+# 'Caferağa Mah., Kadıköy/İstanbul'
+missing("Moda Cad. Kadıköy", dil="en")
+# ['neighbourhood or village missing', 'house number missing', 'postcode missing (recommended)']
 ```
 
-Turkish field names: `from tr_adres import ayristir`.
+Every result also carries `confidence` (0-1) and `notes` (what was corrected or inferred). Pass `fix=False` to keep words as written. Turkish field names: `from turkce_adres import ayristir`.
 
 ### Command line
 
 ```bash
-tr-adres "Serdivan Sakarya Kemalpaşa mah 2320 sk no:5/A kat 2" --lang en
-
-# CSV: adds the field columns next to your address column; the delimiter is detected
-tr-adres customers.csv --column address --format --lang en -o customers_parsed.csv
+turkce-adres "kızılay meydanı ziya gökalp cd 12 çankaya ankara" --lang en --format --geocode
+turkce-adres customers.csv --column address --lang en --format --geocode --missing --dedupe -o out.csv
+turkce-adres customers.csv --column address --lang en --generalise mahalle -o shareable.csv
 ```
 
-If your file already has a column with the same name as a new field (`number`, `province`...), nothing is overwritten: all new columns get the `tr_adres_` prefix.
-
-## Fields
-
-| English | Turkish | Example |
-|---|---|---|
-| `province` | `il` | İstanbul |
-| `district` | `ilce` | Kadıköy |
-| `neighbourhood` | `mahalle` | Caferağa |
-| `street` | `yol` | Moda |
-| `street_type` | `yol_turu` | street / avenue / boulevard (sokak / cadde / bulvar) |
-| `parent_street` | `ust_yol` | Atatürk in "Atatürk Bulvarı 45. Sokak" |
-| `number` | `no` | 12, 5/A |
-| `unit` | `ic_kapi` | flat number |
-| `floor` | `kat` | 2 |
-| `building` | `bina` | Levent Plaza |
-| `postcode` | `posta_kodu` | 34710 |
-| `unparsed` | `kalan` | leftover words |
+If your file already has a column with the same name as a new field, nothing is overwritten: new columns get the `adres_` prefix.
 
 ## Evaluation
 
-Test data comes from Turkish addresses in OpenStreetMap: 66,842 unique addresses with all components filled in and consistent with the province/district list. Each address was rendered as text in one of six styles (canonical, all-caps ASCII, province first, comma-separated, with postcode, with floor and unit), with randomly chosen abbreviations.
+Comparison ignores case and Turkish diacritics. "All fields correct" is the share of addresses where every labelled field is right.
 
-The rules were tuned on `bench/gelistirme.jsonl` (6,000 addresses). The headline number is from a **separate** set of 6,000 addresses, `bench/sinama.jsonl`, never looked at during development (no overlap):
-
-| Field | Correct |
-|---|---|
-| All fields correct | **99.5%** (5,968 / 6,000) |
-| province | 100% |
-| district | 100% (5,999 / 6,000) |
-| neighbourhood | 99.6% |
-| street | 99.7% |
-| house number | 100% |
-| postcode | 100% (735 / 735) |
-| floor, unit | 100% (1,265 / 1,265) |
-
-Comparison ignores case and Turkish diacritics. Most remaining errors come from messy OpenStreetMap tags. Re-run with `python bench/degerlendir.py sinama`.
+| Set | How it was made | All fields correct |
+|---|---|---|
+| `bench/sinama.jsonl` (6,000) | Turkish OpenStreetMap addresses rendered with templates; never looked at during development | **99.5% (5,969 / 6,000)** |
+| `bench/gelistirme.jsonl` (6,000) | Same method; rules were tuned on this set | 99.5% (5,973 / 6,000) |
+| `bench/zor.tsv` (58) | Hand-written, hand-labelled messy addresses (labelled fields, typos, district without province, site/block, villages, dead ends, landmarks) | 100% (58 / 58), see the note below |
 
 **Limits:**
 
-- The test texts are template-generated; real human writing (typos, missing words, unusual order) is harder and will score lower.
-- Neighbourhood and street names are not checked against a list. All-caps ASCII input does not get its Turkish letters back.
-- A district name at the very start is not split off unless a province is also given, so names like "Fatih Sultan Mehmet Mah." stay intact.
-- No geocoding and no validation against the official national address registry.
+- The first two sets are template-generated. The third was written by the author of this project and some rules were fixed after looking at it, so it is not an independent benchmark. Real-world input will score lower.
+- Neighbourhood validation, geocoding and spelling fixes only know what OpenStreetMap knows. Street-level coordinates exist only for streets with addresses in OSM (14,777 streets). Coordinates are **approximate**: OSM centre points for neighbourhoods and villages, medians of those for districts and provinces.
+- The postcode-to-district table is derived only from OSM address tags (792 postcodes); the PTT list is not used.
+- `generalise` is generalisation, not anonymisation on its own.
+- No validation against the official national address registry (UAVT), which is not public.
+
+## About the name
+
+This project was first opened on GitHub as `tr-adres`. The `tr-adres` package on PyPI is an independent project by another developer; to avoid confusion this package is published as `turkce-adres` (module `turkce_adres`, command `turkce-adres`).
 
 ## License
 
 - Code: [MIT](LICENSE).
-- Province/district list (`src/tr_adres/veri/gazetteer.json`) and test sets (`bench/*.jsonl`) are derived from OpenStreetMap data, **© OpenStreetMap contributors**, [ODbL 1.0](LICENSE-DATA.md).
+- The gazetteers in `src/turkce_adres/veri/` and the test sets in `bench/*.jsonl` are derived from OpenStreetMap data, **© OpenStreetMap contributors**, [ODbL 1.0](LICENSE-DATA.md).

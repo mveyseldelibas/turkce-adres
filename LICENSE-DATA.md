@@ -3,7 +3,10 @@
 The following files are derived from OpenStreetMap data and are made available
 under the Open Database License (ODbL) 1.0:
 
-- `src/tr_adres/veri/gazetteer.json` (province and district names)
+- `src/turkce_adres/veri/gazetteer.json` (province and district names)
+- `src/turkce_adres/veri/mahalle.json.gz` (neighbourhoods, villages and their centre points)
+- `src/turkce_adres/veri/sokak.json.gz` (street centre points, postcode to district table)
+- `src/turkce_adres/veri/kelime.json.gz` (spelling list built from OSM place and street names)
 - `bench/gelistirme.jsonl`, `bench/sinama.jsonl` (test sets)
 
 © OpenStreetMap contributors. https://www.openstreetmap.org/copyright

@@ -1,0 +1,14 @@
+{
+ "mahalle_koy_semt": 66687,
+ "il_mahalleli": 81,
+ "ilce_mahalleli": 973,
+ "sokak": 14777,
+ "posta_kodu": 792,
+ "kelime": 13935,
+ "bayt": {
+  "mahalle": 869121,
+  "sokak": 219032,
+  "kelime": 92513
+ },
+ "mahalle_verisi_olmayan_iller": []
+}

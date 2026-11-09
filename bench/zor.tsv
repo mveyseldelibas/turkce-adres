@@ -1,0 +1,61 @@
+# Elle yazılmış ve elle etiketlenmiş "zor" adresler. Şablonla üretilmedi. Kişisel veri yoktur; adresler genel
+# örneklerdir, gerçek bir kişiyi ya da kurumu göstermez. Sütunlar: metin, sonra alan=değer çiftleri.
+# no = dış kapı numarası; "12/3" yazımı dış kapı 12, iç kapı 3 sayılır. mahalle alanı köyleri de kapsar.
+caferaga mh moda cd no 12 d 3 kadikoy istanbul	il=İstanbul	ilce=Kadıköy	mahalle=Caferağa	yol=Moda	yol_turu=cadde	no=12	ic_kapi=3
+ISTANBUL BESIKTAS LEVENT MAH. BUYUKDERE CAD NO 185	il=İstanbul	ilce=Beşiktaş	mahalle=Levent	yol=Büyükdere	yol_turu=cadde	no=185
+Kızılay Mah. Atatürk Bulvarı No:115 Kat:4 Çankaya/ANKARA	il=Ankara	ilce=Çankaya	mahalle=Kızılay	yol=Atatürk	yol_turu=bulvar	no=115	kat=4
+alsancak mah 1469 sk no 8 d 2 konak izmir	il=İzmir	ilce=Konak	mahalle=Alsancak	yol=1469	yol_turu=sokak	no=8	ic_kapi=2
+Bağdat Caddesi No:350 Daire:12 Kat:5 Suadiye Mahallesi Kadıköy İstanbul 34740	il=İstanbul	ilce=Kadıköy	mahalle=Suadiye	yol=Bağdat	yol_turu=cadde	no=350	ic_kapi=12	kat=5	posta_kodu=34740
+Kadikoy Caferaga Mah Moda Cad 12/3	il=İstanbul	ilce=Kadıköy	mahalle=Caferağa	yol=Moda	yol_turu=cadde	no=12	ic_kapi=3
+Levent Mah. Büyükdere Cad. No:185 Besiktas/Istnbul	il=İstanbul	ilce=Beşiktaş	mahalle=Levent	yol=Büyükdere	yol_turu=cadde	no=185
+Mahalle: Caferağa, Cadde: Moda, No: 5, İlçe: Kadıköy, İl: İstanbul	il=İstanbul	ilce=Kadıköy	mahalle=Caferağa	yol=Moda	yol_turu=cadde	no=5
+Bostanlı Mah. 1203/2 Sk. No:6 D:3 Karşıyaka İzmir	il=İzmir	ilce=Karşıyaka	mahalle=Bostanlı	yol=1203/2	yol_turu=sokak	no=6	ic_kapi=3
+Moda Cad. No:5 34710	il=İstanbul	ilce=Kadıköy	yol=Moda	yol_turu=cadde	no=5	posta_kodu=34710
+100. Yıl Mah. 29 Ekim Cad. No:4 Bağlar/Diyarbakır	il=Diyarbakır	ilce=Bağlar	mahalle=100. Yıl	yol=29 Ekim	yol_turu=cadde	no=4
+Hayrullah Mah. Trabzon Cad. No:20 Onikişubat/K.Maraş	il=Kahramanmaraş	ilce=Onikişubat	mahalle=Hayrullah	yol=Trabzon	yol_turu=cadde	no=20
+adapazarı tığcılar mahallesi uzun çarşı no 45	il=Sakarya	ilce=Adapazarı	mahalle=Tığcılar	no=45
+600 Evler Mah. 2114 Sk. no 3 Bandırma/Balıkesir	il=Balıkesir	ilce=Bandırma	mahalle=600 Evler	yol=2114	yol_turu=sokak	no=3
+kızılay meydanı ziya gökalp cd 12 çankaya ankara	il=Ankara	ilce=Çankaya	yol=Ziya Gökalp	yol_turu=cadde	no=12
+Fatih Sultan Mehmet mah, Poligon Caddesi, No.8C/1, Ümraniye, İstanbul	il=İstanbul	ilce=Ümraniye	mahalle=Fatih Sultan Mehmet	yol=Poligon	yol_turu=cadde	no=8C	ic_kapi=1
+Esentepe Mahallesi Büyükdere Caddesi Levent Plaza No 173 Şişli İstanbul Türkiye	il=İstanbul	ilce=Şişli	mahalle=Esentepe	yol=Büyükdere	yol_turu=cadde	no=173
+Yıldız Sit. B Blk. Kat 2 D:5, Çankaya / ANKARA	il=Ankara	ilce=Çankaya	kat=2	ic_kapi=5	blok=B
+Cumhuriyet Mah. Gazi Cad. No:15-A Kat: Zemin Bayraklı İzmir	il=İzmir	ilce=Bayraklı	mahalle=Cumhuriyet	yol=Gazi	yol_turu=cadde	no=15/A
+Merkez mah. Okul sok. no 3 Kuyucak Aydın	il=Aydın	ilce=Kuyucak	mahalle=Merkez	yol=Okul	yol_turu=sokak	no=3
+Atatürk Mah. Cumhuriyet Cad. No:15/3 Serdivan/Sakarya	il=Sakarya	ilce=Serdivan	mahalle=Atatürk	yol=Cumhuriyet	yol_turu=cadde	no=15	ic_kapi=3
+Yeni Mah. 1203 Sok. No 4 Daire 7 Merkez/Kırşehir	il=Kırşehir	ilce=Kırşehir Merkez	mahalle=Yeni	yol=1203	yol_turu=sokak	no=4	ic_kapi=7
+Bahçelievler mh 7. sk no5 kat3 daire9 bahçelievler istanbul	il=İstanbul	ilce=Bahçelievler	mahalle=Bahçelievler	yol=7.	yol_turu=sokak	no=5	ic_kapi=9	kat=3
+KONAK MAH. 1453 SOKAK NO:22 D:4 NILUFER/BURSA 16110	il=Bursa	ilce=Nilüfer	mahalle=Konak	yol=1453	yol_turu=sokak	no=22	ic_kapi=4	posta_kodu=16110
+Barbaros Bulvarı Yıldız İş Merkezi No:145 Kat:4 Beşiktaş	il=İstanbul	ilce=Beşiktaş	yol=Barbaros	yol_turu=bulvar	no=145	kat=4
+Yeşilyurt Köyü Merkez Sokak No:7 Kızılcahamam Ankara	il=Ankara	ilce=Kızılcahamam	mahalle=Yeşilyurt	yol=Merkez	yol_turu=sokak	no=7
+Şemsi Paşa Çıkmazı No:4 Üsküdar İstanbul	il=İstanbul	ilce=Üsküdar	yol=Şemsi Paşa	yol_turu=cikmaz	no=4
+ANKARA CANKAYA KAVAKLIDERE MAH TUNALI HILMI CAD NO 88 D 4	il=Ankara	ilce=Çankaya	mahalle=Kavaklıdere	yol=Tunalı Hilmi	yol_turu=cadde	no=88	ic_kapi=4
+Göztepe mahallesi, Fahrettin Kerim Gökay caddesi no:120/5 Kadıköy	il=İstanbul	ilce=Kadıköy	mahalle=Göztepe	yol=Fahrettin Kerim Gökay	yol_turu=cadde	no=120	ic_kapi=5
+Kemeraltı Cad. No 12 Kat 3 Daire 6 Beyoğlu İst.	il=İstanbul	ilce=Beyoğlu	yol=Kemeraltı	yol_turu=cadde	no=12	kat=3	ic_kapi=6
+Sanayi Mah. 1. Sanayi Sitesi 5. Blok No:12 Eskişehir	il=Eskişehir	mahalle=Sanayi	no=12	blok=5
+Mimar Sinan Mah. Ankara Yolu Cad. No:45 Osmangazi/Bursa	il=Bursa	ilce=Osmangazi	mahalle=Mimar Sinan	yol=Ankara Yolu	yol_turu=cadde	no=45
+Ziya Gökalp Mah. Süleyman Demirel Blv. No:7 Başakşehir İSTANBUL	il=İstanbul	ilce=Başakşehir	mahalle=Ziya Gökalp	yol=Süleyman Demirel	yol_turu=bulvar	no=7
+Konyaaltı/Antalya, Hurma Mahallesi, 195/1 Sokak, No: 5	il=Antalya	ilce=Konyaaltı	mahalle=Hurma	yol=195/1	yol_turu=sokak	no=5
+Çarşı Mah. Uzunçarşı Cad. No:24 Ortahisar Trabzon	il=Trabzon	ilce=Ortahisar	mahalle=Çarşı	yol=Uzunçarşı	yol_turu=cadde	no=24
+inönü mah. atatürk cad. no:67 merkez/afyon	il=Afyonkarahisar	ilce=Afyonkarahisar Merkez	mahalle=İnönü	yol=Atatürk	yol_turu=cadde	no=67
+Kültür Mah. 1375. Sk. No:8/2 Konak/İzmir 35220	il=İzmir	ilce=Konak	mahalle=Kültür	yol=1375.	yol_turu=sokak	no=8	ic_kapi=2	posta_kodu=35220
+Hürriyet Mah, Dr. Sadık Ahmet Cad. No:12, Bağcılar, İstanbul	il=İstanbul	ilce=Bağcılar	mahalle=Hürriyet	yol=Dr. Sadık Ahmet	yol_turu=cadde	no=12
+GAZIOSMANPASA MAH. CINNAH CAD. NO:30/7 CANKAYA ANKARA	il=Ankara	ilce=Çankaya	mahalle=Gaziosmanpaşa	yol=Cinnah	yol_turu=cadde	no=30	ic_kapi=7
+Selçuklu Konya Yazır Mah. Kule Sk. No 3	il=Konya	ilce=Selçuklu	mahalle=Yazır	yol=Kule	yol_turu=sokak	no=3
+Atakum Samsun Mimar Sinan mh. 105. sk no 9 daire 2	il=Samsun	ilce=Atakum	mahalle=Mimar Sinan	yol=105.	yol_turu=sokak	no=9	ic_kapi=2
+Turgutreis Mah. Atatürk Cad. No: 52 Bodrum MUĞLA	il=Muğla	ilce=Bodrum	mahalle=Turgutreis	yol=Atatürk	yol_turu=cadde	no=52
+Yenimahalle Ankara Demetevler mah 402. cad no 15	il=Ankara	ilce=Yenimahalle	mahalle=Demetevler	yol=402.	yol_turu=cadde	no=15
+Mustafa Kemal Paşa Bulvarı No:200 Merkezefendi Denizli	il=Denizli	ilce=Merkezefendi	yol=Mustafa Kemal Paşa	yol_turu=bulvar	no=200
+Akçaabat Trabzon, Yaylacık Mah. Sahil Cad. 14/1	il=Trabzon	ilce=Akçaabat	mahalle=Yaylacık	yol=Sahil	yol_turu=cadde	no=14	ic_kapi=1
+Harbiye Mah. Kurtuluş Cd. Nu:5 Antakya-Hatay	il=Hatay	ilce=Antakya	mahalle=Harbiye	yol=Kurtuluş	yol_turu=cadde	no=5
+Zafer Mh. Gazi Blv. No:44 Bağlar DİYARBAKIR 21100	il=Diyarbakır	ilce=Bağlar	mahalle=Zafer	yol=Gazi	yol_turu=bulvar	no=44	posta_kodu=21100
+Ataşehir Barbaros Mah. Begonya Sk. No: 3 Kat:-1	il=İstanbul	ilce=Ataşehir	mahalle=Barbaros	yol=Begonya	yol_turu=sokak	no=3	kat=-1
+Eskişehir Odunpazarı Vişnelik Mah. Cumhuriyet Blv. No:18	il=Eskişehir	ilce=Odunpazarı	mahalle=Vişnelik	yol=Cumhuriyet	yol_turu=bulvar	no=18
+Yalı Mah. Sahil Yolu No:3 Mudanya/Bursa	il=Bursa	ilce=Mudanya	mahalle=Yalı	yol=Sahil	yol_turu=yol	no=3
+Cumhuriyet Mh 2250 Sk No:5 Daire:2 Esenyurt İstanbul	il=İstanbul	ilce=Esenyurt	mahalle=Cumhuriyet	yol=2250	yol_turu=sokak	no=5	ic_kapi=2
+Sahrayıcedit mah. atatürk cad. no.45 d.3 kadıköy/ist	il=İstanbul	ilce=Kadıköy	mahalle=Sahrayıcedit	yol=Atatürk	yol_turu=cadde	no=45	ic_kapi=3
+Kocatepe Mahallesi Mithatpaşa Caddesi No: 33/6 06420 Çankaya Ankara	il=Ankara	ilce=Çankaya	mahalle=Kocatepe	yol=Mithatpaşa	yol_turu=cadde	no=33	ic_kapi=6	posta_kodu=06420
+Merkez Mah. Hal Yolu Cad. No:2 Silivri İstanbul	il=İstanbul	ilce=Silivri	mahalle=Merkez	yol=Hal Yolu	yol_turu=cadde	no=2
+İzmir Karşıyaka Mavişehir Mah. 2050 Sk. No:9 K:3 D:12	il=İzmir	ilce=Karşıyaka	mahalle=Mavişehir	yol=2050	yol_turu=sokak	no=9	ic_kapi=12	kat=3
+Bahçelievler Mah. 3. Cadde No:22 Sur Diyarbakır Kaya Market karşısı	il=Diyarbakır	ilce=Sur	mahalle=Bahçelievler	yol=3.	yol_turu=cadde	no=22
+Sakarya Mah. Necatibey Cd. No:5 Çankaya Ankara	il=Ankara	ilce=Çankaya	mahalle=Sakarya	yol=Necatibey	yol_turu=cadde	no=5
+Aydın Mah. 1500 Sk. No:3 Turgutlu Manisa	il=Manisa	ilce=Turgutlu	mahalle=Aydın	yol=1500	yol_turu=sokak	no=3

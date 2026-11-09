@@ -1,12 +1,12 @@
 {
  "set": "sinama",
  "n": 6000,
- "tum_alanlar_dogru": "5968/6000 %99.5",
+ "tum_alanlar_dogru": "5969/6000 %99.5",
  "alan": {
   "il": "6000/6000 %100.0",
-  "ilce": "5999/6000 %100.0",
+  "ilce": "6000/6000 %100.0",
   "mahalle": "5978/6000 %99.6",
-  "yol": "5981/6000 %99.7",
+  "yol": "5986/6000 %99.8",
   "yol_turu": "5998/6000 %100.0",
   "no": "6000/6000 %100.0",
   "posta_kodu": "735/735 %100.0",
@@ -14,12 +14,12 @@
   "ic_kapi": "1265/1265 %100.0"
  },
  "bicim_tam": {
-  "kanonik": "992/1000 %99.2",
+  "kanonik": "993/1000 %99.3",
   "buyuk_ascii": "994/1000 %99.4",
-  "il_basta": "998/1000 %99.8",
+  "il_basta": "999/1000 %99.9",
   "virgullu": "997/1000 %99.7",
   "postali": "731/735 %99.5",
-  "daireli": "1256/1265 %99.3"
+  "daireli": "1255/1265 %99.2"
  },
  "ornek_hatalar": [
   {
@@ -29,15 +29,9 @@
    "altin": "Dervişali,"
   },
   {
-   "alan": "yol",
-   "metin": "İstanbul Fatih Dervişali, Mahallesi Kariye Cami Sok. No: 18",
-   "bulunan": "Mahallesi Kariye Cami",
-   "altin": "Kariye Cami"
-  },
-  {
    "alan": "mahalle",
    "metin": "Hekimsuyu Cad. No:55A YENİ MAHALLE/GAZİOSMANPAŞA Mah. Hekimsuyu Cd. No.55A Gaziosmanpaşa/İstanbul",
-   "bulunan": "YENİ",
+   "bulunan": "Yeni",
    "altin": "Hekimsuyu Cad. No:55A YENİ MAHALLE/GAZİOSMANPAŞA"
   },
   {
@@ -53,28 +47,10 @@
    "altin": "Emek Mudanya Caddesi 65."
   },
   {
-   "alan": "yol",
-   "metin": "Sarıgazi Mah. Şemistan Şit sk no 19 Sancaktepe/İstanbul",
-   "bulunan": null,
-   "altin": "Şemistan Şit"
-  },
-  {
-   "alan": "yol_turu",
-   "metin": "Sarıgazi Mah. Şemistan Şit sk no 19 Sancaktepe/İstanbul",
-   "bulunan": null,
-   "altin": "sokak"
-  },
-  {
    "alan": "mahalle",
    "metin": "Adil Mahallesi, Ekol Caddesi Mah. Vezneciler sk No: 34 Kat:12 D:21 Sultanbeyli/İstanbul",
    "bulunan": "Adil",
    "altin": "Adil Mahallesi, Ekol Caddesi"
-  },
-  {
-   "alan": "yol",
-   "metin": "Adil Mahallesi, Ekol Caddesi Mah. Vezneciler sk No: 34 Kat:12 D:21 Sultanbeyli/İstanbul",
-   "bulunan": "Mah. Vezneciler",
-   "altin": "Vezneciler"
   },
   {
    "alan": "mahalle",
@@ -91,14 +67,8 @@
   {
    "alan": "mahalle",
    "metin": "MECIDIYE MAHALLESI, SELCUK CADDESI MAHALLESI ISILAY SK. NO: 19 SULTANBEYLI ISTANBUL",
-   "bulunan": "MECIDIYE",
+   "bulunan": "Mecidiye",
    "altin": "Mecidiye Mahallesi, Selçuk Caddesi"
-  },
-  {
-   "alan": "yol",
-   "metin": "MECIDIYE MAHALLESI, SELCUK CADDESI MAHALLESI ISILAY SK. NO: 19 SULTANBEYLI ISTANBUL",
-   "bulunan": "MAHALLESI ISILAY",
-   "altin": "Işılay"
   },
   {
    "alan": "mahalle",
@@ -109,7 +79,7 @@
   {
    "alan": "mahalle",
    "metin": "Maltepe, Yılanlı Ayazma Yolu No:13, D BLOK 109 MAH., Yılanlı Ayazma Sokak, No: 13, Zeytinburnu, İstanbul",
-   "bulunan": "BLOK 109",
+   "bulunan": null,
    "altin": "Maltepe, Yılanlı Ayazma Yolu No:13, D BLOK 109"
   },
   {
@@ -145,7 +115,7 @@
   {
    "alan": "mahalle",
    "metin": "MASLAK, AOS 55. SK NO:4 42 B BLOK, KAT:7, 34475 SARIYER/ISTANBUL MAH AOS 55. SOKAK NO:4 SARIYER ISTANBUL",
-   "bulunan": "ISTANBUL",
+   "bulunan": "İstanbul",
    "altin": "Maslak, AOS 55. Sk No:4 42 B Blok, Kat:7, 34475 Sarıyer/İstanbul"
   },
   {
@@ -180,14 +150,20 @@
   },
   {
    "alan": "yol",
-   "metin": "Adil Mahallesi, Bosna Bulvarı Caddesi Mah. Akasya Sokak No:4 Kat:6 D:27 Sultanbeyli/İstanbul",
-   "bulunan": "Caddesi Mah. Akasya",
-   "altin": "Akasya"
+   "metin": "İkitelli OSB mah 18. Blok sk no 23 Kat:7 D:5 Başakşehir/İstanbul",
+   "bulunan": null,
+   "altin": "18. Blok"
+  },
+  {
+   "alan": "yol_turu",
+   "metin": "İkitelli OSB mah 18. Blok sk no 23 Kat:7 D:5 Başakşehir/İstanbul",
+   "bulunan": null,
+   "altin": "sokak"
   },
   {
    "alan": "mahalle",
    "metin": "Darülaceze Caddesi No:2 İstanbul/Istanbul Mahallesi Darülaceze Caddesi No.2 Kat:3 D:14 Şişli/İstanbul",
-   "bulunan": "Istanbul",
+   "bulunan": "İstanbul",
    "altin": "Darülaceze Caddesi No:2 İstanbul/Istanbul"
   },
   {
@@ -201,6 +177,30 @@
    "metin": "YESILBAGLAR MAH. D100 BULVARI NO:2 PENDIK ISTANBUL",
    "bulunan": null,
    "altin": "bulvar"
+  },
+  {
+   "alan": "yol",
+   "metin": "Atakent mah 454/A. sk No:5 Kat:7 D:25 İdil/Şırnak",
+   "bulunan": "454/A",
+   "altin": "454/A."
+  },
+  {
+   "alan": "yol",
+   "metin": "Aydıntepe Mh. Marmara Caddesi, Elmadağ sk no 1 Tuzla/İstanbul",
+   "bulunan": "Elmadağ",
+   "altin": "Marmara Caddesi, Elmadağ"
+  },
+  {
+   "alan": "yol",
+   "metin": "Saray Gümüşoluk Mh. Hacı Bayram Veli.. Cad. no 4 Pursaklar/Ankara",
+   "bulunan": "Hacı Bayram Veli",
+   "altin": "Hacı Bayram Veli.."
+  },
+  {
+   "alan": "mahalle",
+   "metin": "BEYOGLU/ISTANBUL MAH DEMIRBAS SOKAK NO.32 BEYOGLU ISTANBUL",
+   "bulunan": "İstanbul",
+   "altin": "Beyoğlu/İstanbul"
   }
  ]
 }

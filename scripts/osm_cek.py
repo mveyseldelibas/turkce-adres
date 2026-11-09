@@ -14,7 +14,7 @@ KOK = Path(__file__).resolve().parents[1]
 sys.stdout.reconfigure(encoding="utf-8")
 HAM = KOK / "ham"
 UC = "https://overpass-api.de/api/interpreter"
-UA = {"User-Agent": "tr-adres-acik-veri/0.1"}
+UA = {"User-Agent": "turkce-adres-acik-veri/0.1"}
 BEKLE = 8
 
 

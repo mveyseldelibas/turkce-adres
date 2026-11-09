@@ -1,13 +1,13 @@
 {
  "set": "gelistirme",
  "n": 6000,
- "tum_alanlar_dogru": "5972/6000 %99.5",
+ "tum_alanlar_dogru": "5973/6000 %99.5",
  "alan": {
   "il": "6000/6000 %100.0",
   "ilce": "6000/6000 %100.0",
   "mahalle": "5981/6000 %99.7",
-  "yol": "5981/6000 %99.7",
-  "yol_turu": "5999/6000 %100.0",
+  "yol": "5983/6000 %99.7",
+  "yol_turu": "6000/6000 %100.0",
   "no": "6000/6000 %100.0",
   "kat": "1245/1245 %100.0",
   "ic_kapi": "1245/1245 %100.0",
@@ -17,7 +17,7 @@
   "kanonik": "994/1000 %99.4",
   "buyuk_ascii": "996/1000 %99.6",
   "il_basta": "996/1000 %99.6",
-  "virgullu": "995/1000 %99.5",
+  "virgullu": "996/1000 %99.6",
   "daireli": "1240/1245 %99.6",
   "postali": "751/755 %99.5"
  },
@@ -59,12 +59,6 @@
    "altin": "Konaklı Mahallesi No:"
   },
   {
-   "alan": "yol",
-   "metin": "Antalya Alanya Konaklı Mahallesi No: Mh. Mustafa Kemal Bulvarı no 33",
-   "bulunan": "Mh. Mustafa Kemal",
-   "altin": "Mustafa Kemal"
-  },
-  {
    "alan": "mahalle",
    "metin": "Antalya Kemer Cumhuriyet Mahallesi, Göynük Mahallesi 131. Sk. No: 4",
    "bulunan": "Cumhuriyet",
@@ -75,18 +69,6 @@
    "metin": "Antalya Kemer Cumhuriyet Mahallesi, Göynük Mahallesi 131. Sk. No: 4",
    "bulunan": "Göynük Mahallesi 131.",
    "altin": "131."
-  },
-  {
-   "alan": "yol",
-   "metin": "Sarıgazi Mahallesi, Şemistan Şit Sokak, No: 25, Sancaktepe, İstanbul",
-   "bulunan": null,
-   "altin": "Şemistan Şit"
-  },
-  {
-   "alan": "yol_turu",
-   "metin": "Sarıgazi Mahallesi, Şemistan Şit Sokak, No: 25, Sancaktepe, İstanbul",
-   "bulunan": null,
-   "altin": "sokak"
   },
   {
    "alan": "mahalle",
@@ -127,7 +109,7 @@
   {
    "alan": "mahalle",
    "metin": "bayraklıdede mah. Selçuk bulvarı no Mahallesi Turgut Özal Bulv. No.12/1 Kuşadası/Aydın",
-   "bulunan": "bayraklıdede",
+   "bulunan": "Bayraklıdede",
    "altin": "bayraklıdede mah. Selçuk bulvarı no"
   },
   {
@@ -151,8 +133,14 @@
   {
    "alan": "mahalle",
    "metin": "SARIMAZI SB. MAH. 2. BULVAR 5. CD. NO.5/01 CEYHAN ADANA",
-   "bulunan": "SARIMAZI SB",
+   "bulunan": "Sarımazı Sb",
    "altin": "Sarımazı SB."
+  },
+  {
+   "alan": "yol",
+   "metin": "SARIMAZI SB. MAH. 2. BULVAR 5. CD. NO.5/01 CEYHAN ADANA",
+   "bulunan": "5.",
+   "altin": "2. Bulvar 5."
   },
   {
    "alan": "yol",
@@ -163,14 +151,8 @@
   {
    "alan": "mahalle",
    "metin": "SARAY MAHALLESI, AHMET TEVFIK ILERI NO:18 MAHALLESI AHMET TEVFIK ILERI CADDESI NO 18 UMRANIYE ISTANBUL",
-   "bulunan": "SARAY",
+   "bulunan": "Saray",
    "altin": "Saray Mahallesi, Ahmet Tevfik İleri No:18"
-  },
-  {
-   "alan": "yol",
-   "metin": "SARAY MAHALLESI, AHMET TEVFIK ILERI NO:18 MAHALLESI AHMET TEVFIK ILERI CADDESI NO 18 UMRANIYE ISTANBUL",
-   "bulunan": "MAHALLESI AHMET TEVFIK ILERI",
-   "altin": "Ahmet Tevfik İleri"
   },
   {
    "alan": "mahalle",
@@ -193,7 +175,7 @@
   {
    "alan": "yol",
    "metin": "Meriç Mahallesi, MTK Sitesi MAH. 5747/3. sk No:3 Bornova/İzmir",
-   "bulunan": "MAH. 5747/3.",
+   "bulunan": "MTK Sitesi MAH. 5747/3.",
    "altin": "5747/3."
   },
   {
@@ -201,6 +183,24 @@
    "metin": "Kandilli İskele Cd. No:3, Kandilli Mh. Kandilli İskele Cad. No:3 Kat:12 D:18 Üsküdar/İstanbul",
    "bulunan": "Kandilli",
    "altin": "Kandilli İskele Cd. No:3, Kandilli"
+  },
+  {
+   "alan": "mahalle",
+   "metin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi MAH. 101. Caddesi No:19, 42280 Selçuklu/Konya",
+   "bulunan": "Büyükkayacık",
+   "altin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi"
+  },
+  {
+   "alan": "yol",
+   "metin": "Büyükkayacık Mahallesi Konya 4.Organize Sanayi Bölgesi MAH. 101. Caddesi No:19, 42280 Selçuklu/Konya",
+   "bulunan": "4.Organize Sanayi Bölgesi MAH. 101.",
+   "altin": "101."
+  },
+  {
+   "alan": "yol",
+   "metin": "ATAKENT MAH 451/A. SOKAK NO 3 IDIL SIRNAK",
+   "bulunan": "451/A",
+   "altin": "451/A."
   }
  ]
 }

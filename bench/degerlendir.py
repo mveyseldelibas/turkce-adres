@@ -14,7 +14,7 @@ from pathlib import Path
 
 KOK = Path(__file__).resolve().parent
 sys.path.insert(0, str(KOK.parent / "src"))
-from tr_adres import ayristir, katla  # noqa: E402
+from turkce_adres import ayristir, katla  # noqa: E402
 
 ALANLAR = ["il", "ilce", "mahalle", "yol", "yol_turu", "no", "posta_kodu", "kat", "ic_kapi"]
 

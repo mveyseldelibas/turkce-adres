@@ -3,7 +3,7 @@ Sınama: il, ilçe, mahalle, yol ve kapı no'su tam ve sözlükle tutarlı adres
 Önce ham veri: python scripts/osm_cek.py (ham/ klasörüne, ~125 MB, depoya konmaz).
 Kullanım: python scripts/hazirla.py --ad gelistirme --atla 0      (ilk 6000 tekil adres)
           python scripts/hazirla.py --ad sinama --atla 6000      (sonraki 6000, geliştirmede görülmedi)
-Çıktı: bench/<ad>.jsonl, bench/ozet_<ad>.json, src/tr_adres/veri/gazetteer.json
+Çıktı: bench/<ad>.jsonl, bench/ozet_<ad>.json, src/turkce_adres/veri/gazetteer.json
 """
 from __future__ import annotations
 
@@ -102,7 +102,7 @@ def main() -> None:
                 b = "daireli"
             altin = {"il": x["il"], "ilce": x["ilce"], "mahalle": x["mahalle"], "yol": x["yol"], "yol_turu": x["yol_turu"], "no": x["no"], **ek}
             f.write(json.dumps({"id": f"tradres-{i:05d}", "bicim": b, "metin": metin, "altin": altin}, ensure_ascii=False) + "\n")
-    (KOK / "src" / "tr_adres" / "veri" / "gazetteer.json").write_text(json.dumps({"kaynak": "© OpenStreetMap katkıcıları, ODbL 1.0", "iller": {il: {"ilceler": sorted(v)} for il, v in sorted(gaz.items())}}, ensure_ascii=False), encoding="utf-8")
+    (KOK / "src" / "turkce_adres" / "veri" / "gazetteer.json").write_text(json.dumps({"kaynak": "© OpenStreetMap katkıcıları, ODbL 1.0", "iller": {il: {"ilceler": sorted(v)} for il, v in sorted(gaz.items())}}, ensure_ascii=False), encoding="utf-8")
     o = {"il": len(gaz), "ilce": sum(len(v) for v in gaz.values()), "sayac": say, "tekil_tutarli": len(tek), "ad": arg.ad, "atla": arg.atla, "n": len(tek[arg.atla:arg.atla + arg.n])}
     (KOK / "bench" / f"ozet_{arg.ad}.json").write_text(json.dumps(o, ensure_ascii=False, indent=1), encoding="utf-8")
     print(json.dumps(o, ensure_ascii=False))
