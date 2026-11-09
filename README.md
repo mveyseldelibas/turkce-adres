@@ -2,6 +2,10 @@
 
 [English](README.en.md)
 
+[![PyPI](https://img.shields.io/pypi/v/turkce-adres.svg)](https://pypi.org/project/turkce-adres/) [![Lisans: MIT + ODbL](https://img.shields.io/badge/lisans-MIT%20%2B%20ODbL-green.svg)](LICENSE-DATA.md)
+
+![turkce-adres demo: dağınık bir adres ayrıştırılıyor, standart yazıma çevriliyor, internetsiz konum ve benzerlik hesaplanıyor](docs/demo.gif)
+
 Türkçe adresler için internetsiz, ek paket gerektirmeyen bir Python kütüphanesi ve komut satırı aracı:
 
 - **Ayrıştırır:** dağınık yazılmış adresi il, ilçe, mahalle/köy, cadde/sokak/bulvar/çıkmaz/meydan, kapı no, blok, kat, daire, bina, posta kodu ve "Migros karşısı" gibi tarif ifadelerine ayırır.

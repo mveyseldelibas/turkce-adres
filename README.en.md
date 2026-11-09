@@ -2,6 +2,10 @@
 
 [Türkçe](README.md)
 
+[![PyPI](https://img.shields.io/pypi/v/turkce-adres.svg)](https://pypi.org/project/turkce-adres/) [![License: MIT + ODbL](https://img.shields.io/badge/license-MIT%20%2B%20ODbL-green.svg)](LICENSE-DATA.md)
+
+![turkce-adres demo: a messy address is parsed, formatted, geocoded offline and matched](docs/demo.gif)
+
 An offline, dependency-free Python library and command line tool for Turkish addresses:
 
 - **Parse** free-text addresses into province, district, neighbourhood/village, street (street, avenue, boulevard, dead end, square), house number, block, floor, unit, building, postcode, and landmark phrases such as "Migros karşısı" (opposite Migros).
