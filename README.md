@@ -94,6 +94,8 @@ Excel'den "CSV UTF-8" olarak kaydedilen dosyalar doğrudan okunur; çıktı Exce
 
 Yeniden ölçmek için: `python bench/degerlendir.py sinama` ve `python bench/zor_degerlendir.py`.
 
+OSM kaynaklı sınama setleri Hugging Face'te de yayımlı: [mvdelibas/tr-adres-test](https://huggingface.co/datasets/mvdelibas/tr-adres-test). Yalnız ayrıştırmayı tarayıcıda denemek için: [TR-Adres Ayrıştırıcı](https://huggingface.co/spaces/mvdelibas/tr-adres-ayristirici).
+
 **Sınırlar, dürüstçe:**
 
 - İlk iki set şablonla üretildi. Üçüncü seti bu projeyi geliştiren kişi yazdı ve bazı kurallar o sete bakılarak düzeltildi; bağımsız bir ölçüm değildir. Gerçek kullanıcı yazımında sonuç daha düşük olur. Yanlış ayrılan adres örnekleri (kişisel veri içermeden) çok değerli.
